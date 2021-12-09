@@ -8,6 +8,9 @@
 public class Ejercicio18 {
 
 	public static void main(String[] args) {
+		// Este programa es simple, inicializamos las variables y al ser múltiplos de 15
+		// solo habrá que ejecutar la iteración del bucle while las veces que se nos
+		// pide, sumando 11 y imprimiendo en cada iteración
 		int count = 0;
 		int num = 0;
 		while (count <= 25) {

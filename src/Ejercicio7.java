@@ -16,12 +16,18 @@ import java.util.Scanner;
  */
 public class Ejercicio7 {
 	public static void main(String[] args) {
+		// Se inicializa el Scanner para leer el número de preguntas y cuantas de estas
+		// han sido acertadas
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Cantidad de preguntas: ");
 		int numPreguntas = sc.nextInt();
 		System.out.println("Cantidad preguntas acertadas: ");
 		int acertadas = sc.nextInt();
+		// Multiplico el porcentaje por 100 para poder seguir usando el tipo de dato
+		// int, y lo divido entre el número de preguntas para sacar el porcentaje
 		int porcentaje = (acertadas * 100) / numPreguntas;
+		// Inicializo la variable resultado como null y le doy un valor o otro
+		// dependiendo del valor del porcentaje como se nos dice en el enunciado
 		String resultado = null;
 		if (porcentaje < 50) {
 			resultado = "Fuera de nivel";

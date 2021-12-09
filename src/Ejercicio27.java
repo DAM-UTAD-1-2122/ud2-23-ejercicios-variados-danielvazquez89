@@ -12,11 +12,16 @@ import java.util.Scanner;
 public class Ejercicio27 {
 
 	public static void main(String[] args) {
+		// Inicializamos Scanner para preguntar el número del que se hará su tabla
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduzca el número de la tabla que quiere saber: ");
 		int numMult = sc.nextInt();
+		// Inicializo una variable con el mismo valor para poder sumarle el valor de la
+		// tabla que estamos haciendo en cada iteración a la acumulación que imprimimos
 		int multiplicacion = numMult;
+		// Este for ejecutará 12 iteraciones ya que se nos pide la tabla hasta el x12
 		for (int count = 1; count <= 12; count++) {
+			// Este if es para evitar una coma de más a la derecha
 			if (count == 1) {
 				System.out.print(multiplicacion);
 			} else {

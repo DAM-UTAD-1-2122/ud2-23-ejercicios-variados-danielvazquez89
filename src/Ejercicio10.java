@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class Ejercicio10 {
 
 	public static void main(String[] args) {
+		// Se importa el Scanner y se leen los tres valores
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Primer valor: ");
 		int num1 = sc.nextInt();
@@ -18,6 +19,8 @@ public class Ejercicio10 {
 		int num2 = sc.nextInt();
 		System.out.println("Tercer valor: ");
 		int num3 = sc.nextInt();
+		// Si todos son menores a 10 se imprime por consola que todos son menores a 10,
+		// y si alguno no es menor a 10 se imprime que no todos son menores a 10
 		if (num1 < 10 && num2 < 10 && num3 < 10) {
 			System.out.println("Todos los números son menores de 10");
 		} else {

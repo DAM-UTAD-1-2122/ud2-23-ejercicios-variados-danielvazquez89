@@ -13,15 +13,23 @@ import java.util.Scanner;
 public class Ejercicio17 {
 
 	public static void main(String[] args) {
+		// Importamos el Scanner y inicializamos las variables necesarias para almacenar
+		// los datos pedidos (la suma de sueldos, los sueldos menores a 300, y los
+		// sueldos mayores a 300)
 		Scanner sc = new Scanner(System.in);
 		int sumSueldos = 0;
 		int sueldosBajos = 0;
 		int sueldosAltos = 0;
+		// Leemos la cantidad de empleados de los que introduciremos su sueldo
 		System.out.println("Introduce el número de empleados: ");
 		int empleados = sc.nextInt();
+		// Pedimos que se introduzcan los sueldos y con un while pedimos la cantidad de
+		// sueldos que se ha especificado antes
 		System.out.println("Introduce los sueldos ( entre 100 y 500 ): ");
 		while (empleados > 0) {
 			int sueldos = sc.nextInt();
+			// Con los if vemos en que rango se encuentra el valor y dependiendo de ello
+			// sumamos 1 al contador respectivo
 			if (sueldos <= 300 && sueldos >= 100) {
 				sueldosBajos += 1;
 			} else if (sueldos > 300) {

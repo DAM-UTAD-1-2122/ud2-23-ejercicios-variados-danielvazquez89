@@ -13,10 +13,17 @@ import java.util.Scanner;
 public class Ejercicio24 {
 
 	public static void main(String[] args) {
+		// Inicializamos el Scanner y un contador para almacenar la cantidad de
+		// triángulos con superficies mayores a 12 con un if posteriormente
 		Scanner sc = new Scanner(System.in);
 		int countMayores = 0;
+		// Inicializamos el bucle for que tendrá un número de iteraciones el cual
+		// dependerá de la variable cant, a la que el usuario le dará el valor por
+		// consola
 		System.out.println("Introduce la cantidad de pares de datos que quieras introducir: ");
 		for (int cant = sc.nextInt(); cant > 0; cant--) {
+			// Leemos la base y altura del triángulo y imprimimos los valores pedidos en
+			// cada iteración
 			System.out.println("Introduzca la base y altura del nuevo triángulo: ");
 			int base = sc.nextInt();
 			int altura = sc.nextInt();
@@ -27,6 +34,8 @@ public class Ejercicio24 {
 				countMayores++;
 			}
 		}
+		// Aquí se imprime por consola el contador del que he hablado en el primer
+		// comentario
 		System.out.println("Hay " + countMayores + " triángulos con una superficie mayor a 12");
 		sc.close();
 	}

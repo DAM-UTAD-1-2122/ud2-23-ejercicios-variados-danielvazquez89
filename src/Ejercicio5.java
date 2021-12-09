@@ -10,6 +10,9 @@ import java.util.Scanner;
  */
 public class Ejercicio5 {
 	public static void main(String[] args) {
+		// Se inicializa el Scanner para leer el número introducido, el cúal mediante
+		// unos ifs se imprimira si este es mayor a 0, menor, o nulo, lo que he
+		// considerado que es 0
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduzca el número: ");
 		int num = sc.nextInt();

@@ -12,9 +12,13 @@ import java.util.Scanner;
  */
 public class Ejercicio6 {
 	public static void main(String[] args) {
+		// Inicializamos el Scanner para leer el número
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduce el número: ");
 		int num = sc.nextInt();
+		// Utilizamos los ifs para comparar nuestra variable con los valores intoducidos
+		// de manera que imprima una cosa o otra dependiendo del resultado de esta
+		// comparación
 		if (num >= 1000) {
 			System.out.println("El número introducido es mayor al esperado");
 		} else if (num / 10 < 1) {

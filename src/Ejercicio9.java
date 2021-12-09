@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class Ejercicio9 {
 
 	public static void main(String[] args) {
+		// Inicializamos el Scanner para leer los 3 valores
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Primer valor: ");
 		int num1 = sc.nextInt();
@@ -19,6 +20,8 @@ public class Ejercicio9 {
 		int num2 = sc.nextInt();
 		System.out.println("Tercer valor: ");
 		int num3 = sc.nextInt();
+		// Con este if preguntamos si todos los valores son iguales, si lo son se
+		// imprime lo pedido, y sino se imprime que no son iguales
 		if (num1 == num2 && num2 == num3) {
 			System.out.println((num1 + num2) * num3);
 		} else {

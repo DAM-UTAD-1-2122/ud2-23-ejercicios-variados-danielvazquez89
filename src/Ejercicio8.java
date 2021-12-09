@@ -10,11 +10,14 @@ import java.util.Scanner;
  */
 public class Ejercicio8 {
 	public static void main(String[] args) {
+		// Inicializamos el Scanner para leer el día y el mes
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduce el día: ");
 		int dia = sc.nextInt();
 		System.out.println("Introduce el mes: ");
 		int mes = sc.nextInt();
+		// Inicializamos el String resultado el cual imprimiremos luego con el valor que
+		// salga del if diciendo si es o no es navidad
 		String resultado;
 		if (dia >= 24 && mes == 12 || dia <= 6 && mes == 1) {
 			resultado = "Es navidad!";

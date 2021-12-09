@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class Ejercicio12 {
 
 	public static void main(String[] args) {
+		// Importamos el Scanner para leer los dos valores para sacar la coordenada
 		Scanner sc = new Scanner(System.in);
 		System.out.println(
 				"Introduzca las coordenadas para ver en que cuadrante se encuentra, recuerda que el 0 no es válido!");
@@ -20,6 +21,8 @@ public class Ejercicio12 {
 		int x = sc.nextInt();
 		System.out.println("Introduzca la coordenada y: ");
 		int y = sc.nextInt();
+		// Preguntamos las distintas condiciones que nos pone el ejercicio y según cual
+		// se cumpla se imprimirá si está en un cuadrante o en otro
 		if (x > 0 && y > 0) {
 			System.out.println("El punto se encuentra en el primer cuadrante");
 		} else if (x < 0 && y > 0) {
